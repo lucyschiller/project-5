@@ -36,7 +36,7 @@ app.get('/telnums', (req, res) => {
     success: 'true',
     message: 'tel numbers retrieved successfully',
     tel_nums: db
-  })
+  });
 });
 
 // endpoint to add a tel number
@@ -45,13 +45,13 @@ app.post('/addnum', (req, res) => {
     id: db.length + 1,
     name: req.body.name,
     number: req.body.number
-  }
+  };
   db.push(telnum); //add record to local db
   return res.status(201).send({
     success: 'true',
     message: 'Telephone Number added successfully',
     telnum
-  })
+  });
 });
 
 //endpoint to get a single tel number
