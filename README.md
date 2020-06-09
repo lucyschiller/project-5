@@ -1,5 +1,5 @@
 
-# Project 5 Repo
+# CIT 281 Project 5
 
 [My Github User Page](https://lucyschiller.github.io/)
 
